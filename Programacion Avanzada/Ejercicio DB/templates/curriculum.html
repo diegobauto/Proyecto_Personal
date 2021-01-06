@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+     <title>Hojas de Vida</title>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/curriculum.css') }}">
+   </head>
+   <body>
+      <nav>
+         <a href = "{{ url_for('show_all') }}">HOME</a>
+      </nav>
+
+      <aside>
+        {%- for message in get_flashed_messages() %}
+           {{ message }}
+        {%- endfor %}
+      </aside>
+      <section>
+        <h2><center>HOJA DE VIDA</center></h2>
+
+        <img src="{{ url_for('static', filename='Sin título-1.jpg') }}" width="200px"><br>
+
+        <div>
+          <h3>DATOS BÁSICOS</h3>
+        </div>
+
+        <table class="data">
+           <thead>
+              <tr>
+                 <th>Nombres</th>
+                 <th>Apellidos</th>
+                 <th>Codigo</th>
+                 <th>Años</th>
+                 <th>Ciudad</th>
+                 <th>Correo</th>
+                 <th>Celular</th>
+                 <th>RH</th>
+              </tr>
+           </thead>
+
+           <tbody class="data">
+                 <tr>
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.lastName }}</td>
+                    <td>{{ student.code }}</td>
+                    <td>{{ student.years }}</td>
+                    <td>{{ student.city }}</td>
+                    <td>{{ student.address }}</td>
+                    <td>{{ student.cel }}</td>
+                    <td>{{ student.rh }}</td>
+                 </tr>
+           </tbody>
+        </table>
+
+        <div>
+          <h3>FORMACIÓN ACADÉMICA</h3>
+        </div>
+
+        <table class="data">
+           <thead>
+              <tr>
+                 <th>Primaria</th>
+                 <th>Secundaria</th>
+                 <th>Técnico</th>
+                 <th>Tecnólogo</th>
+                 <th>Universidad</th>
+                 <th>Otro</th>
+              </tr>
+           </thead>
+
+           <tbody class="data">
+                 <tr>
+                    <td>{{ student1.primary }}</td>
+                    <td>{{ student1.secundary }}</td>
+                    <td>{{ student1.tecn1 }}</td>
+                    <td>{{ student1.tecn2 }}</td>
+                    <td>{{ student1.collegue }}</td>
+                    <td>{{ student1.other }}</td>
+                 </tr>
+           </tbody>
+        </table>
+
+        <div>
+          <h3>TECNOLOGIAS E INTERESES</h3>
+        </div>
+
+        <table class="data">
+           <thead>
+              <tr>
+                 <th>Interés #1</th>
+                 <th>Interés #2</th>
+                 <th>Interés #3</th>
+                 <th>Interés #4</th>
+                 <th>Interés #5</th>
+              </tr>
+           </thead>
+
+           <tbody class="data">
+                 <tr>
+                    <td>{{ student2.in1 }}</td>
+                    <td>{{ student2.in2 }}</td>
+                    <td>{{ student2.in3 }}</td>
+                    <td>{{ student2.in4 }}</td>
+                    <td>{{ student2.in5 }}</td>
+                 </tr>
+           </tbody>
+        </table>
+    </section>
+   </body>
+</html>
