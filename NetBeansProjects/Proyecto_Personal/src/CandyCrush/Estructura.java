@@ -30,6 +30,7 @@ public class Estructura {
     
   //Declarar la matriz:
   private String matriz[][]=new String [9][9];
+  
   public void setMatriz(String matriz[][]){
     this.matriz = matriz;
   } 

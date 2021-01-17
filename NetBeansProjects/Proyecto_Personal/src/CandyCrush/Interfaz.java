@@ -18,8 +18,7 @@ public class Interfaz extends JFrame implements ActionListener {
     int s1,s2 ;
     static int num1;
     static int num2;
-    
-    //Declarar un 
+     
     enum Dato{
         POSICION,DIRECCION
     }
@@ -32,7 +31,7 @@ public class Interfaz extends JFrame implements ActionListener {
        
     ActionListener oyenteEvento =  new ActionListener() {
         @Override
-        public void  actionPerformed(ActionEvent e) {
+        public void actionPerformed(ActionEvent e) {
             num = (e.getActionCommand());
             s1 = Integer.parseInt(num.substring(0,1))+1;
             s2 = Integer.parseInt(num.substring(1,2))+1;
