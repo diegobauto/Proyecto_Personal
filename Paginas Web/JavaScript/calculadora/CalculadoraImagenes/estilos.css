@@ -1,11 +1,17 @@
 #display {
+    border : 1px solid #000000;
     width : 240px;
-    height: 32px;
+    height: 50px;
     text-align : right;
     border-radius : 5px;
     font-size : 30px;
-    padding : 5px;
+    padding: 5px;
     background-color: white;
+}
+
+img{
+    width: 40px;
+    height: 45px;
 }
 
 #operador{
@@ -21,12 +27,13 @@
     border: 0px;
 }
 
+
 button {
     outline: none;
-    border : 0px solid #efefef;
+    border : 1px solid #efefef;
     font-size: 20px;
     width: 55px;
-    height: 48px;
+    height: 45px;
     margin-top: 8px;
     margin-right: 2px;
     margin-left: 2px;
@@ -39,9 +46,12 @@ button:hover{
     font-size: 25px;
 }
 
-#borrador {
+#esconder{
+    color: white;
+}
+
+#borrador{
     color: rgb(255, 0, 0);
-    font-size: 13px;
 }
 
 #calculadora {

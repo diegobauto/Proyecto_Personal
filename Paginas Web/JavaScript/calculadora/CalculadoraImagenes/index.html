@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora con Imagenes</title>
+        <script src="script.js" language="JavaScript"></script>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+
+    <body onload ="iniciar()">
+        d
+        <section id="calculadora">
+            <div id="display"> </div>
+            <button id="" onclick="actualizar(this);">(</button>
+            <button id="" onclick="actualizar(this);">)</button>
+            <button id="borrador" onclick="iniciar();">AC</button>
+            <button id="borrador" onclick="borrar();"><=</button><br>
+            
+            <button id="foto7" value='<img src="img/foto7.png">' onClick="mostrar_imagen(7);">7</button>
+            <button id="foto8" value='<img src="img/foto8.png">' onClick="mostrar_imagen(8);">8</button>
+            <button id="foto9" value='<img src="img/foto9.png">' onClick="mostrar_imagen(9);">9</button>
+            <button id="operador" onclick="actualizar(this);">/</button><br>
+            
+            <button id="foto4" value='<img src="img/foto4.png">' onClick="mostrar_imagen(4);">4</button>
+            <button id="foto5" value='<img src="img/foto5.png">' onClick="mostrar_imagen(5);">5</button>
+            <button id="foto6" value='<img src="img/foto6.png">' onClick="mostrar_imagen(6);">6</button>
+            <button id="operador" onclick="actualizar(this);">*</button><br>
+            
+            <button id="foto1" value='<img src="img/foto1.png">' onClick="mostrar_imagen(1);">1</button>
+            <button id="foto2" value='<img src="img/foto2.png">' onClick="mostrar_imagen(2);">2</button>
+            <button id="foto3"  value='<img src="img/foto3.png">' onClick="mostrar_imagen(3);">3</button>
+            <button id="operador" onclick="actualizar(this);">-</button><br>
+            
+            <button id="foto0" value='<img src="img/foto0.png">' onClick="mostrar_imagen(0);">0</button>
+            <button id="" onclick="actualizar(this);">.</button>
+            <button id="igual" onclick="evaluar();">=</button>
+            <button id="operador" onclick="actualizar(this);">+</button>   
+        </section>
+
+        <div id="esconder">
+        </div>
+
+        <div id="esconderNum">
+        </div>
+    </body>
+
+</html>

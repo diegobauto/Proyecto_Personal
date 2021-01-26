@@ -129,7 +129,7 @@ function logicaSuelo(){
     }
 }
 
-
+/*Hola mundo*/
 function colision(){
     if(cactus.x >= 100 && cactus.x <= 160){
         if(trex.y >= suelo-40){
