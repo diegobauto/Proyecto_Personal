@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Ejemplo</title>
+</head>
+
+<body>
+    <script type="text/javascript" language="javascript">
+    function mostrar_imagen(id) {
+        img = document.getElementById(id);
+        img.innerHTML = '<img src="http://static.php.net/www.php.net/images/php.gif" />';
+    }
+
+    function ocultar_imagen(id) {
+        img = document.getElementById(id);
+        img.innerHTML = '';
+    }
+    </script>
+
+    <input type="button" value="Mostrar imagen" onClick="javascript:mostrar_imagen('imagen')" />
+    <input type="button" value="Ocultar imagen" onClick="javascript:ocultar_imagen('imagen')" />
+    <br />
+
+    <div id="imagen">
+    </div>
+
+</body>
+</html> 
