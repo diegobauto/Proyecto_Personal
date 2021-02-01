@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Omega Navigation Sidebar</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/milligram/milligram.min.css">
+  <link rel="stylesheet" href="assets/css/omega.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body id="app">
+<header>
+    <div class="container">
+            <div id="omega">
+                    <a href="#" id="logo">Omega Sidebar</a>
+                <div id="omega-content">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="omega-links">
+                        <a href="#" class="button">Link</a>
+                        <a href="#" class="button button-outline ">Link 2</a>
+                    </div>
+                    
+                </div>
+                <button id="omega-button">&#9776;</button>
+                <div id="omega-sidebar">
+                    <div id="omega-sidebar-header"></div>
+                    <div id="omega-sidebar-body"></div>
+                </div>
+                <div id="omega-overlay"></div>
+            </div>
+    </div>
+</header>
+<main>
+    <section>
+        <div class="container">
+        <h1>Omega Sidebar Navigation</h1>
+        <p><strong>Omega</strong> est une jolie sidebar responsive en pure javascript</p>
+        <p><a href="#" class="button">Télécharger Omega Sidebar</a><span class="small-text">Ce site de démonstration utilise le framework CSS <a href="https://milligram.io">Milligram</a></span></p>
+        </div>
+    </section>
+    <div class="container">
+        <h1 class="title">Démonstration ?</h1>
+
+            <p>Pour une démonstration, diminuez la fenêtre de votre navigateur ou visitez simplement ce site internet sur votre tablette/smartphone et cliquez sur l'icône &#9776;</p>
+
+            <h1 class="title">Utilisation</h1>
+        <div class="bloc">
+            <div class="bloc--content">
+                <span class="chapter">1.</span>Omega Sidebar est très simple d'utilisation. Commencez par charger les fichiers CSS et Javascript.<br><br>
+                <p>
+                CSS :
+                <pre><code>&lt;link rel="stylesheet" href="path/to/omega.css"&gt;</code></pre>
+                JS :
+                <pre><code>&lt;script src="path/to/omega.js"&gt;&lt;/script&gt;</code></pre>
+                </p>
+            </div>
+        </div>
+        <div class="bloc">
+            <div class="bloc--content">
+                    <span class="chapter">2.</span>Copiez ensuite le code HTML du menu et de la sidebar. (bien entendu, à modifier selon votre projet)<br><br>
+                    <p>
+                        HTML :
+                        <pre><code>
+&lt;div id=&quot;omega&quot;&gt;
+&lt;a href=&quot;#&quot; id=&quot;logo&quot;&gt;Sitename&lt;/a&gt;
+&lt;div id=&quot;omega-content&quot;&gt;
+
+&lt;nav&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;div class=&quot;omega-links&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Inscription&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button button-outline &quot;&gt;Se connecter&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button id=&quot;omega-button&quot;&gt;&amp;#9776;&lt;/button&gt;
+&lt;div id=&quot;omega-sidebar&quot;&gt;
+&lt;div id=&quot;omega-sidebar-header&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;omega-sidebar-body&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;omega-overlay&quot;&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+                        </code></pre>
+                    </p>
+            </div>
+        </div>
+                <div class="bloc">
+                        <div class="bloc--content">
+                                <span class="chapter">3.</span>L'animation de la sidebar se trouve dans l'ID <code>#omega-sidebar</code> du fichier omega.css. Vous pouvez la modifier comme bon vous semble.
+                                <p>
+                                    <pre><code>
+#omega-sidebar{
+...
+transition: transform .2s ease-in-out;
+}
+                                    </code></pre>
+                                </p> 
+                        </div>
+                    </div>
+                <div class="bloc">
+                        <div class="bloc--content">
+                                <span class="chapter">4.</span>Les icônes du menu de la sidebar utlisent la librairie <a href="#">FontAwasome</a> avec leurs Unicodes associés<br><br>
+                                <div class="alert alert-info">Il est important d'ajouter un <code>\</code> avant chaque Unicode</div>
+                                <p>
+                                    <pre><code>
+#omega-sidebar-body nav ul li:first-child:before {
+    <strong>content: "\f015";</strong>
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+                                    </code></pre>
+                                    Chaque icône utilise le sélecteur <code>:nth-child </code> suivant l'ordre d'apparition des liens du menu.
+                                    <pre><code>
+#omega-sidebar-body nav ul <strong>li:nth-child(2)</strong>:before {
+    content: "\f15c";
+}
+                                    </code></pre>
+                                </p> 
+                        </div>
+                    </div>
+                    <h1 class="title">Remerciements</h1>
+                    <div class="bloc primary">
+                        <div class="bloc--content">
+                            
+                        </div>
+                    </div>
+            </div>
+        
+    </div>
+</main>
+<footer>
+    2019 <strong>Omega Sidebar</strong> - <a href="https://www.yann-cario.fr">yann-cario.fr</a>
+</footer>
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+<script src="assets/js/omega.js"></script>
+</body>
+</html>

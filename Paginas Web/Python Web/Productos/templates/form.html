@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Datos Producto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>PRODUCTO</h1>
+    <form action="{{ request.path }}" method="POST">
+        <label for = "nombre">Nombres</label>
+        <input type = "text" name = "nombre" placeholder = "Nombre" /><br>
+
+        <label for = "valor">Valor</label>
+        <input type = "text" name = "valor" placeholder = "Valor" /><br>
+
+        <label for = "cantidad">Cantidad</label>
+        <input type = "text" name = "cantidad" placeholder = "Cantidad" /><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
