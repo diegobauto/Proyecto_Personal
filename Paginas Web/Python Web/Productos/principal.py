@@ -1,10 +1,8 @@
 from flask import Flask, redirect, url_for, request,render_template, session
 from flask_sqlalchemy import SQLAlchemy
-app = Flask(__name__)
 
+app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///productos.db"
-app.config["SECRET_KEY"] = "123"
-app.config['UPLOAD_FOLDER'] = "./static"
 db = SQLAlchemy(app)
 
 class producto(db.Model):
