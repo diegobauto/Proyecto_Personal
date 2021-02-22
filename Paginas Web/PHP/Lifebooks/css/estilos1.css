@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../fondos/fondo.jpg);
+}
+
+table,
+p {
+  color: white;
+  font-size: 30px;
+}
+
+td img {
+  display: relative;
+  width: 450px;
+  height: 650px;
+}
+
+.x {
+  position: absolute;
+  left: 60%;
+}
+
+.wreaper {
+  width: 90%;
+  margin: 100px;
+  max-width: 1000px auto;
+  text-align: center;
+}

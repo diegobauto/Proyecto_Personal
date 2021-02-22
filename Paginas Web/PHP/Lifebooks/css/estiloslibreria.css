@@ -1,0 +1,22 @@
+textarea {
+  min-height: 20%;
+  max-height: 10%;
+  min-width: 50%;
+  max-width: 80%;
+  font-size: 20px;
+}
+
+
+input {
+  min-width: 40%;
+  max-width: 80%;
+  font-size: 70%;
+}
+
+.mod {
+  background: white;
+  border: 1px solid black;
+  -webkit-box-shadow: 21px 21px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-top: 27px;
+  width: 52%;
+}

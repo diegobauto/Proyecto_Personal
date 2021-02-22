@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow:auto;
+}
+
+.fondo {
+    background: #08B;
+    background: -webkit-linear-gradient(180deg, #0BF 0%, #056 100%);
+    background: -moz-linear-gradient(180deg, #0BF 0%, #056 100%);
+    background: linear-gradient(180deg, #0BF 0%, #056 100%);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 350%;
+}
+
+th, td{
+    width: 250px;
+    padding-left: 50px;
+    padding: 10px;
+    border: solid black 2px;
+}
+
+th{
+    background-color: #0089b5;
+    color: white;
+}
+
+td{
+    padding: 10px;
+    vertical-align: text-top;
+    height: auto;
+}
+
+/*formulario*/
+form{
+    border: 2px solid darkgray;
+    background-color: white;
+    padding: 10px;
+    margin: 100px auto;
+    width: 400px;
+}
+
+input[type="submit"]{
+    border: 0;
+    background-color: black;
+    color:white;
+    padding: 10px 20px;
+}
+
+.error{
+    background-color: #FF9185;
+    font-size: 15px;
+    padding: 10px;
+}
+.correcto{
+    background-color: #A0DEA7;
+    font-size: 15px;
+    padding: 10px;
+}
