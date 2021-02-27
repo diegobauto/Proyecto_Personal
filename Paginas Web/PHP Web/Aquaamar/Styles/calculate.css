@@ -4,10 +4,6 @@ body {
     overflow:auto;
 }
 
-.container{
-    margin-left: 30%;
-}
-
 .fondo {
     background: #08B;
     background: -webkit-linear-gradient(180deg, #0BF 0%, #056 100%);
@@ -20,31 +16,19 @@ body {
 
 input[type=number]{
     padding: 10px;
-    width: 30%;
+    width: 70%;
 }
 
-a{
-    position: absolute;
-    margin-left: -60%; 
-    margin-top: -3%;
-}
-
-input[type="submit"],a{
+input[type="submit"]{
     border: 0;
     background-color: black;
     color:white;
     padding: 10px 20px;
 }
 
-/* Principal */
 h1{
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 350%;
-}
-
-#option{
-    color: black;
     font-size: 350%;
 }
 
@@ -54,11 +38,14 @@ h1{
     width: 95%;
 }
 
-/*Categorias*/
 .excelent{
     margin-top: 320%;
     height: 20%;
     background-color: blue;
+}
+
+#excelent{
+    color: blue;
 }
 
 .good{
@@ -67,10 +54,18 @@ h1{
     background-color: green;
 }
 
+#good{
+    color: green;
+}
+
 .acceptable{
     margin-top: 160%;
     height: 60%;
     background-color: yellow;
+}
+
+#acceptable{
+    color: yellow;
 }
 
 .polluted{
@@ -79,16 +74,49 @@ h1{
     background-color: orange;
 }
 
+#polluted{
+    color: orange;
+}
+
 .heavily-polluted{
     margin-top: 8%;
     height: 98%;
     background-color: red;
 }
 
+#heavily-polluted{
+    color: red;
+}
+
 .calidad{
     height: 400px;
-    margin-top: -20%;
-    margin-left: 45%;
     width: 100px;
     border: 5px solid black;
+}
+
+.argument{
+    text-align: center;
+    font-size: 250%;
+}
+
+#option{
+    color: black;
+    font-size: 350%;
+}
+
+table{
+    margin: 0 auto;
+    width: 40%;
+}
+
+td{
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content-option{
+    text-align: center;
 }

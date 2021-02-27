@@ -1,12 +1,12 @@
 <html>
     <head>
         <link rel="stylesheet" href="Styles/estilo.css">
-        <title>Water Quality</title>
+        <title>Aquaamar</title>
     </head>
     <body>
         <div class="fondo">
             <center>
-                <h1>Water Quality</h1>
+                <h1>Aquaamar</h1>
                 <div class="info">
                     Water quality describes the condition of the water, including chemical, 
                     physical, and biological characteristics, usually with respect to its suitability 
