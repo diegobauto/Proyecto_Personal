@@ -16,8 +16,8 @@ def inicializar():
     onkey(der, "Right")
     onkey(salir, "q")
     onkey(color, "c")
-    onkey(aum_tamaño, "+")
-    onkey(dis_tamaño, "-")
+    onkey(aum_tamaÃ±o, "+")
+    onkey(dis_tamaÃ±o, "-")
     onkey(sub_lapiz, "s")
     onkey(baj_lapiz, "b")
     onkey(salto, "space")
@@ -70,15 +70,15 @@ def color():
     cont[11] = cont[11] + 1
     print("Color: %d" % cont[11])
 
-def aum_tamaño():
+def aum_tamaÃ±o():
     pensize(5)
     cont[13] = cont[13] + 1
-    print("Tamaño(+): %d" % cont[13])
+    print("Tamaï¿½o(+): %d" % cont[13])
 
-def dis_tamaño():
+def dis_tamaÃ±o():
     pensize(1)
     cont[15] = cont[15] + 1
-    print("Tamaño(-): %d" % cont[15])
+    print("Tamaï¿½o(-): %d" % cont[15])
 
 def sub_lapiz():
     penup()
